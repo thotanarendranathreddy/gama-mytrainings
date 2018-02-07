@@ -1,0 +1,12 @@
+     <div class="panel-body"></div>
+    <form method="POST" action="/delete">
+<div class="row">
+<div class="col-md-4">
+<input type="text" name="delstudentname" class="form-control" placeholder="Student Name">
+</div>
+<div class="col-md-4">
+<button  id="search" type="submit" class="btn btn-info">Click here to Delete</button>
+</div>
+</div>
+</form>
+<div class="panel-body"></div>

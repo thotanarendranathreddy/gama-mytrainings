@@ -1,0 +1,18 @@
+<div class="panel-body"></div>
+            <div class="col-md-4">
+            <form method="POST" action="/update">
+              <div class="form-group">
+              <label for="email">student Name:</label>
+              <input type="text" name="newstudentname" class="form-control" placeholder=" Update based on student Name">
+              </div>
+              <div class="form-group">
+              <label for="email">Status:</label>
+              <input type="text" name="newstatus" class="form-control" placeholder="Status">
+              </div>
+              <div class="panel-body"></div>
+            <div class="col-md-4">
+            <button  id="update" type="submit" class="btn btn-info">Click here to update</button>
+            </div>
+            <div class="panel-body"></div>
+               </form>
+          </div>

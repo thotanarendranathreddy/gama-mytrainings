@@ -1,0 +1,23 @@
+{
+  "name": "MEHN",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-dev main"
+  },
+  "author": "Narendranath Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-validator": "^4.2.1",
+    "faker": "^4.1.0",
+    "file-system": "^2.2.2",
+    "mongodb": "*",
+    "node-dev": "^3.1.3"
+  },
+  "devDependencies": {},
+  "description": ""
+}

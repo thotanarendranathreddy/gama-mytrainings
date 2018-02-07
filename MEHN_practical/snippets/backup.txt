@@ -1,0 +1,151 @@
+<div class="panel-body"></div><div class="panel-body"></div>
+<div class="panel panel-primary margin-top-1 ">
+      <div class="panel-heading">
+        <h3 class="panel-title">MEHN Crud Operation</h3>
+      </div>
+      <div class="panel-body">
+	  	<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#sectionA">Create</a></li>
+					<li><a data-toggle="tab" href="#sectionB">Update</a></li>
+          <li><a data-toggle="tab" href="#sectionC">Search</a></li>
+          <li><a data-toggle="tab" href="#sectionD">Delete</a></li>
+		</ul>
+	  <div class="tab-content">
+					<div id="sectionA" class="tab-pane fade in active">
+					   <div class="panel-body"></div>
+             <div class="col-md-4">
+             <form method="POST" action="/data">
+               <div class="form-group">
+               <label for="email">student Name:</label>
+               <input type="text" name="studentname" class="form-control" placeholder="student Name">
+               </div>
+               <div class="form-group">
+               <label for="email">College Name:</label>
+               <input type="text" name="college" class="form-control" placeholder="College Name">
+               </div>
+               <div class="form-group">
+               <label for="email">Address:</label>
+               <input type="text" name="address" class="form-control" placeholder="Address">
+               </div>
+               <div class="form-group">
+               <label for="email">Age:</label>
+               <input type="text" name="age" class="form-control" placeholder="Age">
+               </div>
+               <div class="form-group">
+               <label for="email">Phone:</label>
+               <input type="text" name="phone" class="form-control" placeholder="Phone">
+               </div>
+               <div class="form-group">
+               <label for="email">Status:</label>
+               <input type="text" name="status" class="form-control" placeholder="Status">
+               </div>
+               <div class="panel-body"></div>
+             <div class="col-md-4">
+             <button  id="search" type="submit" class="btn btn-info">Click here to Submit</button>
+             </div>
+             <div class="panel-body"></div>
+                </form>
+           </div>
+					</div>
+
+					<div id="sectionB" class="tab-pane fade">
+            <div class="panel-body"></div>
+            <div class="col-md-4">
+            <form method="POST" action="/update">
+              <div class="form-group">
+              <label for="email">student Name:</label>
+              <input type="text" name="newstudentname" class="form-control" placeholder=" Update based on student Name">
+              </div>
+              <div class="form-group">
+              <label for="email">Status:</label>
+              <input type="text" name="newstatus" class="form-control" placeholder="Status">
+              </div>
+              <div class="panel-body"></div>
+            <div class="col-md-4">
+            <button  id="update" type="submit" class="btn btn-info">Click here to update</button>
+            </div>
+            <div class="panel-body"></div>
+               </form>
+          </div>
+					</div>
+
+			<div id="sectionC" class="tab-pane fade">
+           <div class="panel-body"></div>
+          <form method="POST" action="/search">
+    <div class="row">
+    <div class="col-md-4">
+    <input type="text" name="searchValue" class="form-control" placeholder="String value here">
+    </div>
+    <div class="col-md-2">
+      <div class="search_categories">
+          <div class="select">
+    <select  name="search_categories" id="search_categories">
+      <option value="" disabled="disabled" selected="selected">Search By</option>
+      <option value="StudentName">StudentName</option>
+      <option value="Address">Address</option>
+      <option value="College">College</option>
+      <option value="Age">Age</option>
+      <option value="Phone">Phone</option>
+      <option value="Status">Status</option>
+    </select>
+    </div></div>
+    </div>
+    <div class="col-md-4">
+    <button  id="search" type="submit" class="btn btn-info">Click here to Search</button>
+    </div>
+    </div>
+</form>
+   <div class="panel-body"></div>
+</div>
+
+
+<div id="sectionD" class="tab-pane fade">
+     <div class="panel-body"></div>
+    <form method="POST" action="/delete">
+<div class="row">
+<div class="col-md-4">
+<input type="text" name="delstudentname" class="form-control" placeholder="Student Name">
+</div>
+<div class="col-md-4">
+<button  id="search" type="submit" class="btn btn-info">Click here to Delete</button>
+</div>
+</div>
+</form>
+<div class="panel-body"></div>
+</div>
+
+
+	 </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-hover">
+                <tr class="danger">
+                  <th>StudentName</th>
+                  <th>Address</th>
+                  <th>College</th>
+        				  <th>Age</th>
+        				  <th>Phone</th>
+        				  <th>Status</th>
+                </tr>
+                <tbody "{{# each dataset }} ">
+                  <tr>
+                    <td>{{ this.StudentName }}</td>
+                    <td>{{ this.Address }}</td>
+                    <td>{{ this.College }}</td>
+                    <td>{{ this.Age }}</td>
+                    <td>{{ this.Phone }}</td>
+                    <td>{{ this.Status }}</td>
+                  </tr>
+                </tbody   {{/each}}>
+
+              </table>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>

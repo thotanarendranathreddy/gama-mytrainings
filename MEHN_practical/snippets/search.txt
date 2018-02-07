@@ -1,0 +1,26 @@
+         <div class="panel-body"></div>
+          <form method="POST" action="/search">
+    <div class="row">
+    <div class="col-md-4">
+    <input type="text" name="searchValue" class="form-control" placeholder="String value here">
+    </div>
+    <div class="col-md-2">
+      <div class="search_categories">
+          <div class="select">
+    <select  name="search_categories" id="search_categories">
+      <option value="" disabled="disabled" selected="selected">Search By</option>
+      <option value="StudentName">StudentName</option>
+      <option value="Address">Address</option>
+      <option value="College">College</option>
+      <option value="Age">Age</option>
+      <option value="Phone">Phone</option>
+      <option value="Status">Status</option>
+    </select>
+    </div></div>
+    </div>
+    <div class="col-md-4">
+    <button  id="search" type="submit" class="btn btn-info">Click here to Search</button>
+    </div>
+    </div>
+</form>
+   <div class="panel-body"></div>

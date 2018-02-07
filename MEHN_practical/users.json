@@ -1,0 +1,22 @@
+{
+  "user1":
+    {
+      "id": 1,
+      "name": "Narendranath Reddy",
+      "salary": "76000",
+      "dept": "Army"
+    },
+   "user2": {
+      "id": 2,
+      "name": "Alex_mason",
+      "salary": "76000",
+      "dept": "Army"
+    },
+    "user3":{
+      "name": "captainprice",
+      "salary": "76000",
+      "dept": "Army",
+      "id": 3
+    }
+
+}
